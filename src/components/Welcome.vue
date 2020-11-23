@@ -8,7 +8,9 @@
             Welcome to Cassis. A simple <code>VueJS</code> application for
             managing your favourite musical albums. This page will give a short
             overview of the application, including it's entities and the method
-            of deployment.
+            of deployment.<br />
+            The source code can be found
+            <a href="https://github.com/Ker0h/cassis">here</a>
           </p>
         </b-col>
       </b-row>

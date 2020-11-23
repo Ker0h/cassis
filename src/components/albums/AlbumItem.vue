@@ -1,6 +1,9 @@
 <template>
   <b-card
-    :title="album.title">
+    :title="album.title"
+    img-src="https://picsum.photos/600/300/?image=25"
+    img-alt="Image"
+    img-left>
     <b-card-text>
       {{artist.name}}
     </b-card-text>
@@ -24,10 +27,6 @@ export default {
         .then(payload => {
           this.artist = payload.data
         })
-    },
-
-    setAlbum () {
-      this.$emit('setAlbum')
     }
   },
   mounted () {
@@ -37,5 +36,7 @@ export default {
 </script>
 
 <style>
-
+  b-card {
+    max-width: 20rem;
+  }
 </style>

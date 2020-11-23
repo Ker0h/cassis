@@ -8,7 +8,7 @@
       >Nothing matching '{{ searchTerm }}' was found</span
     >
 
-<router-link v-for="album in albums" :key="album._id" :to="{ name: 'AlbumDetail', params: { id: album._id} }">
+<router-link v-else v-for="album in albums" :key="album._id" :to="{ name: 'AlbumDetail', params: { id: album._id} }">
       <AlbumItem :album="album" />
 </router-link>
   </div>

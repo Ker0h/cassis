@@ -11,8 +11,8 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item href="https://github.com/Ker0h" target="_blank">
-              <b-icon-code-slash></b-icon-code-slash> GitHub
+            <b-nav-item href="https://github.com/Ker0h/cassis" target="_blank">
+              <b-icon-code-slash></b-icon-code-slash> Repository
             </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
@@ -25,10 +25,10 @@
 
     <b-container fluid>
       <b-row>
-        <b-col cols="12" md="3" order="12" order-md="1">
+        <b-col cols="12" sm="12" md="3" order="12" order-md="1">
           <Sidebar title="Albums"/>
         </b-col>
-        <b-col cols="12" md="auto" order="1" order-md="12">
+        <b-col cols="12" sm="12" md="auto" order="1" order-md="12">
           <router-view />
         </b-col>
       </b-row>
