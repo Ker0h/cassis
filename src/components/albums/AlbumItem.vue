@@ -24,6 +24,10 @@ export default {
         .then(payload => {
           this.artist = payload.data
         })
+    },
+
+    setAlbum () {
+      this.$emit('setAlbum')
     }
   },
   mounted () {
