@@ -1,9 +1,10 @@
-var express = require('express')
-var path = require('path')
-var serveStatic = require('serve-static')
+let servestatic = require('serve-static')
+let path = require('path')
+let express = require('express')
+let port = process.env.PORT || 3000
 
-var app = express()
-app.use(serveStatic(__dirname + "/dist"))
-var port = process.env.PORT || 5000
-app.listen(port)
-console.log('server started ' + port)
+app = express()
+app.use(servestatic(path.join(path.resolve(), 'dist')))
+app.listen(port, () => {
+  console.log("Server started on "+app.get('port'));
+});
